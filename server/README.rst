@@ -1,4 +1,4 @@
-Example Greeter Client
+Example Greeter Server
 ======================
 
 
