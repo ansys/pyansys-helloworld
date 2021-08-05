@@ -1,6 +1,8 @@
 Example Greeter Client
 ======================
 
+This is an example greeter client modeled after the gRPC example from
+[gRPC examples](https://github.com/grpc/grpc/tree/master/examples)
 
 
 Installation
@@ -37,3 +39,27 @@ This has the advantage of being a portable package
 
 Usage
 ~~~~~
+First, be sure you have the `ansys-example-greeter-server` up and
+running by following the directions in
+[server](https://github.com/pyansys/pyansys-helloworld/tree/main/server).
+
+Next, simply run the client package main with:
+
+.. code::
+
+   python -m ansys.examples.greeter_client
+
+This runs the `__main__.py` contained in the package's directory.
+Provided the server is up and running, this should return:
+
+.. code::
+
+   Greeter client received: Hello, you!
+
+If you wish to run the example within Python, you can run:
+
+.. code:: python
+
+   >>> from ansys.examples.greeter_client.client import run
+   >>> run()
+   Greeter client received: Hello, you!

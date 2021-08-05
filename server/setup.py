@@ -23,7 +23,8 @@ def read(rel_path):
 with open(os.path.join(HERE, 'README.rst'), encoding='utf-8') as f:
     long_description = f.read()
 
-install_requires = ['grpcio>=1.30.0']
+install_requires = ['grpcio>=1.30.0',
+                    'ansys-api-greeter-example-v1==0.1.0']
 
 setup(
     name='ansys-examples-greeter-server',
