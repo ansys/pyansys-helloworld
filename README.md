@@ -40,7 +40,8 @@ proto package you built from the previous step; please be sure you
 installed that.
 
 
-Once you have the server and client installed on your local environment, startup the server with:
+Once you have the server and client installed on your local
+environment, startup the server with:
 
 ```
 python -m ansys.examples.greeter_server
@@ -69,3 +70,13 @@ If you want to just want to run the greeter example without building
 any of the packages, you can download the source distributions from
 [Releases](https://github.com/pyansys/pyansys-helloworld/releases).
 Please follow the directions in the release.
+
+
+#### Notes
+
+Regarding versioning, note that python packages must use semantic
+versioning.  As the gRPC service version is insuffient, gRPC packages
+from auto-generated from the proto files contain an additional
+`VERSION` file that tracks the semantic version of the service
+definition. Please see the documentation and reasoning behind this at
+[pyansys-protos-generator](https://github.com/pyansys/pyansys-protos-generator).
